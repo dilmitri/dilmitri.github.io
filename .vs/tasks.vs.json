@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-index",
+      "appliesTo": "admin/html/index.html",
+      "type": "launch"
+    }
+  ]
+}
