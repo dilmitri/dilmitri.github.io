@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\admin",
+    "\\admin\\assets",
+    "\\admin\\assets\\examples",
+    "\\admin\\assets\\examples\\css",
+    "\\admin\\assets\\examples\\css\\pages",
     "\\admin\\html",
     "\\admin\\html\\pages"
   ],
-  "SelectedNode": "\\admin\\html\\pages\\forgot-password.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
