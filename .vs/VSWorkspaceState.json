@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\admin\\assets",
-    "\\admin\\assets\\examples",
-    "\\admin\\assets\\examples\\css",
-    "\\admin\\assets\\examples\\css\\pages",
-    "\\admin\\html",
-    "\\admin\\html\\pages"
+    "\\admin\\html\\pages",
+    "\\admin\\html\\tables"
   ],
   "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
