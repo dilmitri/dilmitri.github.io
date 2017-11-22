@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\admin",
+    "\\admin\\html",
     "\\admin\\html\\pages",
     "\\admin\\html\\tables"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\admin\\html\\pages\\EditUser.html",
   "PreviewInSolutionExplorer": false
 }
