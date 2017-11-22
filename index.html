@@ -7,7 +7,7 @@
     <meta name="description" content="bootstrap admin template">
     <meta name="author" content="">
     <title>Login | POI GAMIFICATION</title>
-    <link rel="apple-touch-icon" href="admin/assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="admin/assets/images/logo.png">
     <link rel="shortcut icon" href="admin/assets/images/favicon.ico">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="global/css/bootstrap.min.css">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="global/vendor/slidepanel/slidePanel.css">
     <link rel="stylesheet" href="global/vendor/flag-icon-css/flag-icon.css">
     <link rel="stylesheet" href="global/vendor/waves/waves.css">
-    <link rel="stylesheet" href="admin/assets/examples/css/pages/login.css">
+    <link rel="stylesheet" href="admin/assets/examples/css/pages/login-v2.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="global/fonts/material-design/material-design.min.css">
     <link rel="stylesheet" href="global/fonts/brand-icons/brand-icons.min.css">
@@ -36,60 +36,70 @@
     <!-- Scripts -->
     <script src="global/vendor/breakpoints/breakpoints.js"></script>
     <script>
-  Breakpoints();
+        Breakpoints();
     </script>
 </head>
-<body class="animsition page-login layout-full page-dark">
+<body class="animsition page-login-v2 layout-full page-dark">
     <!--[if lt IE 8]>
           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
     <!-- Page -->
-    <div class="page vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">
-        
-        <div class="page-content vertical-align-middle">
-            <div class="brand">
-                <img class="brand-img" src="admin/assets//images/logo.png" alt="...">
-                <h2 class="brand-text">POI GAMIFICATION</h2>
+    <div class="page" data-animsition-in="fade-in" data-animsition-out="fade-out">
+        <div class="page-content">
+            <div class="page-brand-info">
+                <div class="brand">
+                    <img class="brand-img" style="max-height: 100px" src="admin/assets/images/logo.png" alt="...">
+                    <h2 class="brand-text font-size-60">POI GAMIFICATION</h2>
+                </div>
+                <p class="font-size-20">
+                 
+                </p>
             </div>
-            <p>Sign into your pages account</p>
-            <form method="post" action="index.html">
-                <div class="form-group form-material floating" data-plugin="formMaterial">
-                    <input type="text" class="form-control empty" id="inputName" name="name">
-                    <label class="floating-label" for="inputName">Name</label>
+            <div class="page-login-main">
+                <div class="brand hidden-md-up">
+                    <img class="brand-img " src="admin/assets/images/logo_.png" alt="...">
+                    <h3 class="brand-text font-size-40">POI GAMIFICATION</h3>
                 </div>
-                <div class="form-group form-material floating" data-plugin="formMaterial">
-                    <input type="email" class="form-control empty" id="inputEmail" name="email">
-                    <label class="floating-label" for="inputEmail">Email</label>
-                </div>
-                <div class="form-group form-material floating" data-plugin="formMaterial">
-                    <input type="password" class="form-control empty" id="inputPassword" name="password">
-                    <label class="floating-label" for="inputPassword">Password</label>
-                </div>
-                <div class="form-group clearfix">
-                    <div class="checkbox-custom checkbox-inline checkbox-primary float-left">
-                        <input type="checkbox" id="inputCheckbox" name="remember">
-                        <label for="inputCheckbox">Remember me</label>
+                <h3 class="font-size-24">Sign In</h3>
+                <p>earn points, collect benefits</p>
+                <form method="post" action="login-v2.html" autocomplete="off">
+                    <div class="form-group form-material floating" data-plugin="formMaterial">
+                        <input type="email" class="form-control empty" id="inputEmail" name="email">
+                        <label class="floating-label" for="inputEmail">Email</label>
                     </div>
-                    <a class="float-right" href="admin/html/pages/forgot-password.html">Forgot password?</a>
-                </div>
-                <a class="btn btn-primary btn-block" href="admin/html/index.html">Sign in</a>
-            </form>
-            <p>Still no account? Please go to <a href="admin/html/pages/register.html">Register</a></p>
-            <footer class="page-copyright page-copyright-inverse">
-                <p>WEBSITE BY amazingSurge</p>
-                <p>© 2017. All RIGHT RESERVED.</p>
-                <div class="social">
-                    <a class="btn btn-icon btn-pure" href="javascript:void(0)">
-                        <i class="icon bd-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a class="btn btn-icon btn-pure" href="javascript:void(0)">
-                        <i class="icon bd-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a class="btn btn-icon btn-pure" href="javascript:void(0)">
-                        <i class="icon bd-google-plus" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </footer>
+                    <div class="form-group form-material floating" data-plugin="formMaterial">
+                        <input type="password" class="form-control empty" id="inputPassword" name="password">
+                        <label class="floating-label" for="inputPassword">Password</label>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="checkbox-custom checkbox-inline checkbox-primary float-left">
+                            <input type="checkbox" id="remember" name="checkbox">
+                            <label for="inputCheckbox">Remember me</label>
+                        </div>
+                        <a class="float-right" href="admin/html/pages/forgot-password.html">Forgot password?</a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary btn-block" style="margin-left:0" href="admin/html/index.html">Sign in</a>
+                    </div>
+                    
+                </form>
+                <p>No account? <a href="admin/html/pages/register.html">Sign Up</a></p>
+                <footer class="page-copyright">
+                    <p></p>
+                    <p>© 2017 POI GAMIFICATION</p>
+                    <div class="social">
+                       <!--<a class="btn btn-icon btn-round social-twitter mx-5" href="javascript:void(0)">
+                            <i class="icon bd-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-icon btn-round social-facebook mx-5" href="javascript:void(0)">
+                            <i class="icon bd-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-icon btn-round social-google-plus mx-5" href="javascript:void(0)">
+                            <i class="icon bd-google-plus" aria-hidden="true"></i>
+                        </a>--> 
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
     <!-- End Page -->
@@ -124,7 +134,7 @@
     <script src="global/js/config/colors.js"></script>
     <script src="admin/assets/js/config/tour.js"></script>
     <script>
-  Config.set('admin/assets', 'admin/assets');
+        Config.set('admin/assets', 'admin/assets');
     </script>
     <!-- Page -->
     <script src="admin/assets/js/Site.js"></script>
@@ -134,13 +144,13 @@
     <script src="global/js/Plugin/jquery-placeholder.js"></script>
     <script src="global/js/Plugin/material.js"></script>
     <script>
-  (function(document, window, $) {
-    'use strict';
-    var Site = window.Site;
-    $(document).ready(function() {
-      Site.run();
-    });
-  })(document, window, jQuery);
+        (function (document, window, $) {
+            'use strict';
+            var Site = window.Site;
+            $(document).ready(function () {
+                Site.run();
+            });
+        })(document, window, jQuery);
     </script>
 </body>
 </html>
